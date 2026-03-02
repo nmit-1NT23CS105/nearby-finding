@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 215 45% 98%;
+  --foreground: 220 35% 13%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 35% 13%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 35% 13%;
+  --primary: 194 92% 36%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 215 36% 94%;
+  --secondary-foreground: 220 35% 20%;
+  --muted: 215 30% 95%;
+  --muted-foreground: 215 15% 38%;
+  --accent: 188 87% 90%;
+  --accent-foreground: 195 90% 24%;
+  --destructive: 0 85% 58%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 214 26% 88%;
+  --input: 214 26% 88%;
+  --ring: 194 92% 36%;
+  --radius: 14px;
+}
+
+.dark {
+  --background: 222 44% 8%;
+  --foreground: 210 40% 96%;
+  --card: 222 37% 11%;
+  --card-foreground: 210 40% 96%;
+  --popover: 222 37% 11%;
+  --popover-foreground: 210 40% 96%;
+  --primary: 191 88% 48%;
+  --primary-foreground: 222 47% 11%;
+  --secondary: 220 25% 18%;
+  --secondary-foreground: 210 40% 96%;
+  --muted: 220 23% 17%;
+  --muted-foreground: 215 20% 70%;
+  --accent: 200 65% 20%;
+  --accent-foreground: 187 80% 82%;
+  --destructive: 0 72% 49%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 220 24% 23%;
+  --input: 220 24% 23%;
+  --ring: 190 90% 45%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground min-h-screen antialiased;
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .surface {
+    @apply rounded-2xl border bg-card/90 backdrop-blur-md shadow-soft;
+  }
+
+  .glass-header {
+    @apply border-b bg-background/80 backdrop-blur-xl;
+  }
+
+  .leaflet-container {
+    @apply rounded-2xl;
+  }
+
+  .leaflet-popup-content-wrapper {
+    @apply rounded-xl;
+  }
+}

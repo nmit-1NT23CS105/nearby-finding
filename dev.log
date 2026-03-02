@@ -1,0 +1,12 @@
+   ▲ Next.js 15.5.12
+   - Local:        http://localhost:4010
+   - Network:      http://192.168.247.239:4010
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 2.3s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 1191ms (114 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 14s (1677 modules)
+ GET / 200 in 15270ms
