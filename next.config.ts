@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   typedRoutes: true,
-  distDir: ".next-local.nosync",
+  distDir: process.env.VERCEL ? ".next" : ".next-local.nosync",
   outputFileTracingRoot: process.cwd(),
   images: {
     remotePatterns: [
